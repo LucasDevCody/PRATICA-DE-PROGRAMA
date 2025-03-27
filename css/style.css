@@ -1,0 +1,51 @@
+
+h1, h2{ 
+    color: #6ff133;
+    text-align: center;
+} 
+
+h1{
+    text-transform: uppercase;
+}
+
+main{
+    margin: 2%;
+}
+
+p{
+    text-align: justify;
+    text-align: center;
+
+}
+
+header{
+    background: #79c1d3;
+}
+
+
+
+
+
+
+.destaque{ 
+    background-color: #551c1c;
+    color: aliceblue;
+    padding: 20px;
+    margin-bottom: 50px;
+
+
+}
+
+
+nav li{ display: inline;
+    margin-left: 20px;
+    color: #f508a6;
+    font-weight: bold;
+    border: 2px solid  #f508a6;
+    padding: 5px;  
+
+}
+
+nav{
+    float: right;
+}

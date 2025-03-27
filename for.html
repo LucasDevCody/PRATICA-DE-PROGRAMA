@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+	    <meta charset="UTF-8">
+	    <title>Estruturas de Repedição</title>
+
+        <Script>
+          
+           // inicialização
+           // condição
+           // incremento
+
+           const qtd = prompt('Quantas Notas?')
+           let soma = 0
+           let nota = 0
+           
+
+
+           for( let contador = 1; contador <=qtd; contador++){
+              nota = Number(prompt(" Digita a nota: " + contador))
+              soma = soma + nota
+
+            }           
+
+           
+            console.log('Soma: ' + soma)
+            console.log('Nota: ' + nota)
+
+            const media = soma/qtd
+            console.log('Média: ' + media)
+
+            const resultado = media >=7 ? 'Aprovado' : 'Reprovado'
+            console.log('Resultado: ' + resultado)
+
+
+            // Exibe os resultados em um alert
+            alert(`Você inseriu ${qtd} notas.\n
+            Soma das notas: ${soma}\n
+            Última nota: ${nota}\n
+            Média: ${media}\n
+            Resultado: ${resultado}`);
+
+
+
+
+
+
+           
+
+
+
+
+        </script>
+
+    </head>
+
+
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Estruturas de Condição Switch</title>
+</head>
+<body>
+    <script>
+
+        /* 
+        Verifica o aumento de salário de acordo com so seguintes cargo:
+        Estagiário: 100% = 100/100 = 1 = 2
+        Analista: 50% = 50/100 = 0.5   = 1.5
+        Gerente: 30% = 30/100 = 0.3    = 1.3
+        Presidente: 10% = 10/100 = 0.1 = 1.1
+        */
+        
+        const salario = prompt('Digita o Salário')
+        const cargo = prompt('Digita um Cargo')
+        let aumento = 0
+
+
+        switch(cargo){
+
+            case 'Estagiário' :aumento =  2;    break;
+            case 'Analista'   :aumento =  1.5;  break;
+            case 'Gerente'    :aumento =  1.3;  break;
+            case 'Presidente' :aumento =  1.1;  break;
+            default: alert( 'Favor escolher um carga válido! ');  
+
+
+        }
+          
+       // const novoSalario = salario + (salario * aumento)
+       // const novoSalario = salario * (1 + aumento)
+
+        const novoSalario = salario * aumento
+
+        console.log('O Novo Salario é: R$ ' + novoSalario)      
+            
+        alert('O Novo Salário é: R$ ' + novoSalario)
+
+        
+    </script>
+</body>
+</html>

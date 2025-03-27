@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+
+    <script>
+
+        function somar(){
+            const n1 = document.getElementById("n1").value;
+            const n2 = document.getElementById("n2").value;
+
+            // Converter os valores para números
+            const soma = Number(n1) + Number(n2);
+
+
+            document.getElementById("Resultado").innerHTML = " A Soma dos números é " + soma
+        }     
+
+        function subtrair(){
+            const n1 = document.getElementById("n1").value;
+            const n2 = document.getElementById("n2").value;
+
+            // Converter os valores para números
+            const subtracao = Number(n1) - Number(n2);
+
+            document.getElementById("Resultado").innerHTML = "A Subtração dos números é " + subtracao;
+
+        
+        }  
+        
+        function multiplicar(){
+            const n1 = document.getElementById("n1").value;
+            const n2 = document.getElementById("n2").value;
+
+           // Converter os valores para números
+           const multiplicacao = Number(n1) * Number(n2);
+
+           document.getElementById("Resultado").innerHTML = "A Multiplicação dos números é " + multiplicacao;
+        }
+
+        function dividir(){
+            const n1 = Number(document.getElementById("n1").value);
+            const n2 = Number(document.getElementById("n2").value);
+
+            // Verifica se o divisor é zero diretamente no cálculo
+           const resultado = n2 === 0 ? "Não é possível dividir por zero!" : n1 / n2;
+
+           document.getElementById("Resultado").innerHTML = "A Divisão dos números é " + resultado;
+        }
+
+
+    </script>
+</head>
+<body>
+    <form action="">
+        
+        N1: <input type="text " id="n1" /><br>
+        N2: <input type="text " id="n2" /><br>
+
+        <input type="button" value="somar" onclick="somar()">
+        <input type="button" value="subtrair" onclick="subtrair()">
+        <input type="button" value="multiplicar" onclick="multiplicar()">
+        <input type="button" value="dividir" onclick="dividir()">
+
+         <h1 id="Resultado">A Soma dos números é </h1>
+
+
+    </form>
+
+</body>
+</html>

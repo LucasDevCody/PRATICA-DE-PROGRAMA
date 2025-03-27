@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Estruturas de Condição</title>
+</head>
+<body>
+    <script>
+
+            // Estruturas de Condição
+        
+            const nota1 = Number(prompt("Digite a Nota 1:"));
+            const nota2 = Number(prompt("Digite a Nota 2:"));
+            const nota3 = Number(prompt("Digite a Nota 3:"));
+            const nota4 = Number(prompt("Digite a Nota 4:"));
+            
+            const media = (nota1 + nota2 + nota3 + nota4) / 4;
+            
+            console.log(' A media é ' + media)
+
+  /*
+
+            if(media >=7){
+                    console.log('Aprovado')
+            } else{
+                console.log('Reprovado')
+            }
+
+ */
+           /*
+            let mensagem = ''
+            if(media >=7){
+                    mensagem = 'Aprovado'
+            } else{
+                mensagem = 'Reprovado'
+            }
+            console.log(mensagem)
+            */
+
+
+            let mensagem = media >=7 ? 'Aprovado' : 'Reprovado'
+            console.log(mensagem)
+
+            alert(`Sua média foi ${media}. Resultado: ${mensagem}`);
+
+
+
+
+            // media >=7 ? console.log('Aprovado') : console.log('Reprovado')
+
+
+        
+        
+
+            
+
+        
+    </script>
+</body>
+</html>
